@@ -14,7 +14,7 @@ function Once{T}(f) where {T}
 end
 
 @noinline _once_invalid_type_parameter(@nospecialize T) =
-    error("`Once{T}`` expcet a type for `T`; got T = $T")
+    error("`Once{T}`` expect a type for `T`; got T = $T")
 
 function Once(f)
     value = f()
